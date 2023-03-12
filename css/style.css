@@ -85,8 +85,6 @@
     cursor: pointer;
 }
 
-
-
 .accordion__arrow{
     width: 5%;
     transition: 0.15s linear all;
@@ -99,10 +97,20 @@
 
 .accordion__content{
     display: none;
+    transform: scale(0);
     transition: 0.15s linear all;
 }
 
 .accordion__content-visible{
     display: block;
+    transform: scale(1);
     transition: 0.15s linear all;
+}
+
+.meme{
+    transition: 0.15s linear all;
+}
+
+.meme__image {
+    max-width: 300px;
 }

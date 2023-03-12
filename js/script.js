@@ -1,9 +1,14 @@
 
-const button = document.querySelector('.accordion__button')
-const arrow = document.querySelector('.accordion__arrow');
-const content = document.querySelector('.accordion__content')
+const button = document.querySelectorAll('.accordion__button')
+const arrow = document.querySelectorAll('.accordion__arrow');
+const content = document.querySelectorAll('.accordion__content')
 
-button.addEventListener ('click', () => {
-    arrow.classList.toggle('accordion__arrow-transformed');
-    content.classList.toggle('accordion__content-visible');
+
+for (let element in button) {
+
+button[element].addEventListener ('click', () => {
+    arrow[element].classList.toggle('accordion__arrow-transformed');
+    content[element].classList.toggle('accordion__content-visible');
 });
+
+}
